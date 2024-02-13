@@ -7,6 +7,7 @@ public class Cuenta {
     private String cuenta;
     private double saldo;
     private double tipoInteres;
+    private String apellidos;
 
     public Cuenta()
     {
@@ -14,14 +15,16 @@ public class Cuenta {
         cuenta="";
         saldo=0;
         tipoInteres=0;
+        apellidos="";
     }
 
-    public Cuenta(String nom, String cue, double sal, double tipo)
+    public Cuenta(String nom, String cue, double sal, double tipo, String apellidos)
     {
         nombre =nom;
         cuenta=cue;
         saldo=sal;
         tipoInteres=tipo;
+        this.apellidos=apellidos;
     }
 
     public double estado()
@@ -78,4 +81,14 @@ public class Cuenta {
     public void setTipoInteres(double tipoInteres) {
         this.tipoInteres = tipoInteres;
     }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+    
+    
 }

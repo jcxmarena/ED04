@@ -10,7 +10,7 @@ public class Main {
         Cuenta cuenta1;
         double saldoActual;
 
-        cuenta1 = new Cuenta("Rafael Nadal Parera","1000-2365-85-1230456789",2500,0);
+        cuenta1 = new Cuenta("Rafael","1000-2365-85-1230456789",2500,0, "Nadal Parera");
         
         System.out.println("El saldo actual es:"+ cuenta1.estado() );
 
